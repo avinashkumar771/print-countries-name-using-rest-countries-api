@@ -1,0 +1,17 @@
+How do we copy by value in a composite data type?
+
+One of the ways of copying the composite data type by value is achieved with the help of spread operator (…).
+
+CopyByValue using SpreadOperator for Composite data type
+var arr =[1,2,3,4];
+var arr2 =[...arr];
+arr[0] = 5;
+console.log(arr);
+console.log(arr2);
+//output
+[5,2,3,4]
+[1,2,3,4]
+
+
+In the above image, the array2 has the elements of array1 copied into it. Any changes made to array1 will not be reflected in array2 and vice versa.
+Hence with the help of Spread operator(…) ,we can copy by value for composite data types.
