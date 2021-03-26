@@ -1,0 +1,13 @@
+                    copy  by value                                                           copy by refrence
+
+ 1.mainly used on primitive data types.                                        Mainly used on composite datatypes.
+2. used only to copy the value of the variable not the address.              used to copy not only the values but address too.
+
+3.var a=10;                                                                    var arr= [1,2,3]
+ var b=5;								    var arr2 = arr1
+									arr[0] = 10;	                                     								
+ var c= a;                                                           in above code , arr will change as [10,2,3] because both arr and arr2 point to the same address.
+var d =b;
+  
+  in above code, if we change the value of c it'll not affect the value of a.
+
